@@ -375,3 +375,19 @@ const text = 'I never look back';
 // Каждый третий элемент
 makeItFunny(text, 3); // 'I NevEr LooK bAck'
 ```
+
+## scramble.js
+
+Реализуйте функцию-предикат ```scramble()```, которая принимает на вход два параметра: набор символов в нижнем регистре (строку) и слово, и проверяет, можно ли из переданного набора составить это слово. В результате вызова функция возвращает __true__ или __false__.
+
+При проверке учитывается количество символов, нужных для составления слова, и не учитывается их регистр.
+
+__Вывод:__
+
+```JavaScript
+scrabble('rkqodlw', 'world'); // true
+scrabble('avj', 'java'); // false
+scrabble('avjafff', 'java'); // true
+scrabble('', 'hexlet'); // false
+scrabble('scriptingjava', 'JavaScript'); // true
+```
