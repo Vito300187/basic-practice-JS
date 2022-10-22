@@ -141,9 +141,9 @@ https://ru.hexlet.io/blog?per=10&page=5
 Реализуйте ```buildQueryString()```, которая принимает на вход список параметров и возвращает сформированный query string из этих параметров:
 
 ```JavaScript
-bqs({ per: 10, page: 1 });
+buildQueryString({ per: 10, page: 1 });
 // page=1&per=10
-bqs({ param: 'all', param1: true });
+buildQueryString({ param: 'all', param1: true });
 // param=all&param1=true
 ```
 
