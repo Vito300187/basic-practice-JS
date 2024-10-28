@@ -22,8 +22,8 @@ const set = (map, key, value) => {
 const get = (map, key, defaultValue = null) => {
     const hash = getIndex(key);
 
-    return map[hash] && map[index][0] === key
-      ? map[index][1]
+    return map[hash] && map[hash][0] === key
+      ? map[hash][1]
       : defaultValue;
 };
 
